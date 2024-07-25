@@ -269,7 +269,7 @@ func saveResponseAsMarkdown(question, content, prompt string) error {
 	timestamp := time.Now().Format("2006-01-02_15-04-05")
 	
 	// Create filename with timestamp
-	filename := fmt.Sprintf("response_%s.md", timestamp)
+	filename := fmt.Sprintf("output/response_%s.md", timestamp)
 
 	// Create the markdown content
 	// markdownContent := fmt.Sprintf("# API Response\n\n## Prompt\n\n%s\n\n## Question\n\n%s\n\n## Answer\n\n%s", prompt, question, content)
